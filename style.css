@@ -1,6 +1,13 @@
 body{
     font-family: Arial, sans-serif;
     font-weight: 300;
+    margin: 0 auto;
+    padding: 0;
+
+}
+html {
+    margin: 0 auto;
+    padding: 0;
 }
 
 #head {
@@ -96,7 +103,7 @@ svg {
 }
 
 #body{
-    height: 500px;
+    height: 450px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -172,4 +179,88 @@ svg {
 .keyboard-search-icon {
     background-image: url("img/icons/keyboard-search-icon.png");
     opacity: 0.5;
+}
+#footer { 
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.050);
+    font-size: 14px;
+    height: 100px;
+    margin-top: 30px;
+}
+.country-div {
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.500);
+    height: 52px;
+    margin: 0 0 0 20px;
+    
+}
+
+.fs {
+    border-top:  1px solid;
+    border-top-color: rgba(0, 0, 0, 0.144);
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rl-div, .ll-div {
+    display: flex;
+    align-items: center;
+}
+
+.fl {
+    display: flex;
+    margin: 10px;
+}
+
+.fl a {
+    color: rgba(0, 0, 0, 0.500);
+}
+
+@media (max-width: 800px){
+    #body {
+        padding: 5px 5px;
+        width: 350px;
+        justify-content: center;
+        height: 376px;
+    }
+    #footer {
+        margin-top:10px;
+        height: 185px;
+    }
+    .fl {
+        min-width: max-content ;
+        height: 15px;
+        margin: 10px 15px;
+        padding-top: 0;
+    }
+    .fs {
+        height: 150px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0 25px;
+    }
+    .ll-div {
+        align-items: start;
+        justify-content: space-evenly;
+        align-items: start;
+        flex-wrap: wrap;
+        margin-top: -5px;
+    }
+    .ll-div>.fl {
+        justify-content: center;
+    } 
+    .rl-div {
+        justify-content: center;
+        align-items: start;
+        flex-wrap: wrap;
+    }
+    .rl-div>.fl {
+        margin: 5px 10px;
+        align-items: center;
+        justify-content: space-evenly; 
+    }
 }
